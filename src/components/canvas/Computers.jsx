@@ -4,7 +4,28 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "./CanvasLoader";
 
 const Computers = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Initial value
+    setIsMobile(mediaQuery.matches);
+
+    // Listener
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   const computer = useGLTF("./desktop_pc/scene.gltf");
+
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor={"black"} />
@@ -19,8 +40,8 @@ const Computers = () => {
       />
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.85, -1.5]}
+        scale={isMobile ? 0.5 : 0.75}
+        position={isMobile ? [0, -2, -1.5] : [0, -3.85, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -41,11 +62,11 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
+        <Computers /> {/* ✅ Prop hata diya */}
       </Suspense>
       <Preload all />
     </Canvas>
   );
 };
 
-export default ComputersCanvas; // 👈 yaha Canvas ko export karo
+export default ComputersCanvas; // ✅ Correct export
