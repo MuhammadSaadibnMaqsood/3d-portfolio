@@ -215,8 +215,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/chatapp.PNG", // apne asset ka naam yahan daal dena
-    source_code_link: "https://github.com/yourusername/chat-application",
+    image: "/chatapp.PNG",
+    source_code_link: "https://github.com/MuhammadSaadibnMaqsood/Chat-app",
   },
   {
     name: "Aura",
@@ -236,8 +236,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/Aura.PNG", 
-    source_code_link: "https://github.com/yourusername/aura-ecommerce",
+    image: "/Aura.PNG",
+    source_code_link:
+      "https://github.com/MuhammadSaadibnMaqsood/AURA-Ecommerce-Plateform",
   },
   {
     name: "K72",
@@ -257,8 +258,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/k27.PNG", 
-    source_code_link: "https://github.com/yourusername/k27-frontend",
+    image: "/k27.PNG",
+    source_code_link: "https://github.com/MuhammadSaadibnMaqsood/K27-Clone",
   },
   {
     name: "Redefine Gaming",
@@ -279,7 +280,8 @@ const projects = [
       },
     ],
     image: "/redefine.PNG",
-    source_code_link: "https://github.com/yourusername/gaming-website",
+    source_code_link:
+      "https://github.com/MuhammadSaadibnMaqsood/Gaming-Website",
   },
 ];
 
