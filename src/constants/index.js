@@ -219,7 +219,7 @@ const projects = [
     source_code_link: "https://github.com/yourusername/chat-application",
   },
   {
-    name: "Aura (E-commerce Platform)",
+    name: "Aura (E-commerce)",
     description:
       "An e-commerce platform that generates QR codes for receipts to simplify warranty claims. Features include product listing, cart, checkout, and a dashboard for shop owners.",
     tags: [
