@@ -59,7 +59,6 @@ const services = [
   },
 ];
 
-
 const technologies = [
   {
     name: "HTML 5",
@@ -106,66 +105,66 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "SupaBase",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT28y_F_fqSBA5jWMYdru_JwbZnYgi3gOfZSg&s",
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "MySQL",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968313.png",
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Frontend Developer (React.js)",
+    company_name: "Portfolio Projects",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxbm2yC0lj9EECY3ypc2guxE1GiKz6qrd9rQ&s",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed responsive and interactive web applications using React.js and Tailwind CSS.",
+      "Implemented reusable components and optimized state management for smooth UI performance.",
+      "Integrated APIs for dynamic content rendering and improved application functionality.",
+      "Built personal projects showcasing skills in frontend web development.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer (MERN)",
+    company_name: "Portfolio Projects",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbn0htLAxjs_uWGTyEwszKlGWfgwad0VzHCA&s",
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a MERN stack project with user authentication and CRUD functionality.",
+      "Designed and implemented database schemas in MongoDB for structured data storage.",
+      "Created REST APIs using Express.js and integrated them with frontend React applications.",
+      "Ensured responsive and mobile-friendly design using Tailwind CSS.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Freelance Developer",
+    company_name: "Fiverr / Self Practice",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdRurK_12ESbJlmq7m5aqSqT-jM821SQ7ow&s",
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed YouTube thumbnails, edited photos, and built small frontend websites for clients.",
+      "Worked on real-world tasks like landing pages and e-commerce layouts.",
+      "Collaborated with clients to deliver requirements on time with good communication.",
+      "Gained experience in problem-solving and handling projects independently.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Software Engineering Student",
+    company_name: "University",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsUSWVE__I8VfKcYDurdouvHON1GLFv_1bKw&s", // education ka icon dal lena
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Ongoing",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Studying core concepts like Data Structures, Algorithms, and Object-Oriented Programming.",
+      "Built multiple academic projects to strengthen programming fundamentals.",
+      "Explored modern frameworks including ASP.NET MVC and MERN stack.",
+      "Passionate about learning new technologies and creating impactful digital solutions.",
     ],
   },
 ];
