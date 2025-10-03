@@ -198,68 +198,90 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Chat Application",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A real-time chat application built with MERN stack that supports user authentication, private & group chats, and instant messaging using WebSockets.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nodejs",
         color: "green-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: 'https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg', // apne asset ka naam yahan daal dena
+    source_code_link: "https://github.com/yourusername/chat-application",
+  },
+  {
+    name: "Aura (E-commerce Platform)",
+    description:
+      "An e-commerce platform that generates QR codes for receipts to simplify warranty claims. Features include product listing, cart, checkout, and a dashboard for shop owners.",
+    tags: [
+      {
+        name: "mern",
+        color: "blue-text-gradient",
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "threejs",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: 'https://img.freepik.com/free-vector/worldwide-e-commerce-concept_23-2147657845.jpg?semt=ais_hybrid&w=740&q=80', // apne asset ka naam yahan daal dena
+    source_code_link: "https://github.com/yourusername/aura-ecommerce",
   },
   {
-    name: "Trip Guide",
+    name: "K27 (Frontend Project)",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A modern frontend project built with HTML, CSS, and GSAP animations, focusing on smooth transitions and interactive UI design.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gsap",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvu7DuQie6wkENFtJRzzVRB2OJaURZQ0RUVw&s', // apne asset ka naam yahan daal dena
+    source_code_link: "https://github.com/yourusername/k27-frontend",
+  },
+  {
+    name: "Gaming Website",
+    description:
+      "A gaming-themed frontend website designed with GSAP animations and Tailwind CSS, delivering smooth animations and a highly engaging UI.",
+    tags: [
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: 'https://img.freepik.com/free-vector/gradient-gaming-logo-template_52683-132733.jpg', // apne asset ka naam yahan daal dena
+    source_code_link: "https://github.com/yourusername/gaming-website",
   },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };
