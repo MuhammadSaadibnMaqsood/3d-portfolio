@@ -50,7 +50,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Express + C",
+    title: "Javascript + C",
     icon: backend,
   },
   {
@@ -215,11 +215,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: 'https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg', // apne asset ka naam yahan daal dena
+    image: "/chatapp.PNG", // apne asset ka naam yahan daal dena
     source_code_link: "https://github.com/yourusername/chat-application",
   },
   {
-    name: "Aura (E-commerce)",
+    name: "Aura",
     description:
       "An e-commerce platform that generates QR codes for receipts to simplify warranty claims. Features include product listing, cart, checkout, and a dashboard for shop owners.",
     tags: [
@@ -236,20 +236,20 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: 'https://img.freepik.com/free-vector/worldwide-e-commerce-concept_23-2147657845.jpg?semt=ais_hybrid&w=740&q=80', // apne asset ka naam yahan daal dena
+    image: "/Aura.PNG", 
     source_code_link: "https://github.com/yourusername/aura-ecommerce",
   },
   {
-    name: "K27 (Frontend Project)",
+    name: "K72",
     description:
-      "A modern frontend project built with HTML, CSS, and GSAP animations, focusing on smooth transitions and interactive UI design.",
+      "A modern frontend project built with React, Tailwind, and GSAP animations, focusing on smooth transitions and interactive UI design.",
     tags: [
       {
-        name: "html",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "Tailwind",
         color: "green-text-gradient",
       },
       {
@@ -257,11 +257,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvu7DuQie6wkENFtJRzzVRB2OJaURZQ0RUVw&s', // apne asset ka naam yahan daal dena
+    image: "/k27.PNG", 
     source_code_link: "https://github.com/yourusername/k27-frontend",
   },
   {
-    name: "Gaming Website",
+    name: "Redefine Gaming",
     description:
       "A gaming-themed frontend website designed with GSAP animations and Tailwind CSS, delivering smooth animations and a highly engaging UI.",
     tags: [
@@ -278,10 +278,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: 'https://img.freepik.com/free-vector/gradient-gaming-logo-template_52683-132733.jpg', // apne asset ka naam yahan daal dena
+    image: "/redefine.PNG",
     source_code_link: "https://github.com/yourusername/gaming-website",
   },
 ];
-
 
 export { services, technologies, experiences, testimonials, projects };

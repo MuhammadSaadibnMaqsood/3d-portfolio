@@ -67,13 +67,13 @@ const Contact = () => {
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         variants={slideIn("left", "tween", 0.2, 1)}
       >
-        <p className={`${styles.sectionSubText}`}>Get in touch</p>
-        <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
+        <p className={`${styles.sectionSubText} `}>Get in touch</p>
+        <h3 className={`${styles.sectionHeadText} `}>Contact.</h3>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-5 flex flex-col gap-4"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your name</span>
@@ -100,7 +100,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your message</span>
             <textarea
-              rows="7"
+              rows="5"
               name="message"
               value={form.message}
               onChange={handleChange}
