@@ -8,6 +8,8 @@ import { slideIn } from "../utils/motion";
 
 //template_8p33929
 //service_uljboci
+
+// fcId4OtRzeL5gU33v
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -30,16 +32,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // apna emailjs service id
-        "YOUR_TEMPLATE_ID", // apna template id
+        "service_uljboci",
+        "template_8p33929", 
         {
           from_name: form.name,
-          to_name: "Saad", // jis ko send karna hai
+          to_name: "Saad", 
           from_email: form.email,
-          to_email: "tumharaemail@gmail.com", // apna email
+          to_email: "muhammadibrahimibnmaqsood@gmail.com", // apna email
           message: form.message,
         },
-        "YOUR_PUBLIC_KEY" // apna public key
+        "fcId4OtRzeL5gU33v" 
       )
       .then(
         () => {
