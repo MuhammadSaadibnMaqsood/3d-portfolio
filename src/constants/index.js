@@ -42,28 +42,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Web Developer",
+    title: "Frontend Architecture",
     icon: web,
   },
   {
-    title: "MERN Stack Developer",
+    title: "Full-Stack (MERN)",
     icon: mobile,
   },
   {
-    title: "Javascript + C",
+    title: "Backend / Node.js",
     icon: backend,
   },
   {
-    title: "UI/UX Enthusiast",
+    title: "Next.js Systems",
     icon: creator,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
   {
     name: "CSS 3",
     icon: css,
@@ -76,6 +72,7 @@ const technologies = [
     name: "TypeScript",
     icon: typescript,
   },
+ 
   {
     name: "React JS",
     icon: reactjs,
@@ -112,87 +109,68 @@ const technologies = [
     name: "MySQL",
     icon: "https://cdn-icons-png.flaticon.com/512/5968/5968313.png",
   },
+  {
+    name: "Express",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLG-N028bTJp3uj9yWfv6QO-4C3t-m29FefA&s",
+  },
+  {
+    name: "Next",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC-uHO0JJy_liMD0bVPZPZrokmdGq2s038qA&s",
+  },
 ];
 
 const experiences = [
   {
     title: "Frontend Developer (React.js)",
-    company_name: "Portfolio Projects",
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxbm2yC0lj9EECY3ypc2guxE1GiKz6qrd9rQ&s",
-    iconBg: "#383E56",
-    date: "2023 - Present",
+    company_name: "K27 Clone & Gaming Website",
+    icon: "https://cdn-icons-png.flaticon.com/512/919/919851.png",
+    iconBg: "#0a0a0a",
+    date: "2025",
     points: [
-      "Developed responsive and interactive web applications using React.js and Tailwind CSS.",
-      "Implemented reusable components and optimized state management for smooth UI performance.",
-      "Integrated APIs for dynamic content rendering and improved application functionality.",
-      "Built personal projects showcasing skills in frontend web development.",
+      "Developed a responsive K27 clothing brand clone using React.js and Tailwind CSS with modern UI design principles.",
+      "Built a fully responsive Gaming Website with interactive layouts and clean component structure.",
+      "Implemented reusable components and optimized rendering performance for smooth user experience.",
+      "Focused on responsive design, hover animations, and clean UI architecture for production-ready frontend applications.",
+    ],
+  },
+  {
+    title: "Frontend Project – URL Shortener",
+    company_name: "Personal Project",
+    icon: "https://cdn-icons-png.flaticon.com/512/1006/1006771.png",
+    iconBg: "#E6DEDD",
+    date: "2026",
+    points: [
+      "Developed a URL Shortener web application with clean UI and simple user workflow.",
+      "Implemented link input validation and dynamic rendering of shortened URLs.",
+      "Focused on user-friendly interface design and responsive layout using modern CSS techniques.",
+      "Structured the project with maintainable and scalable frontend architecture.",
     ],
   },
   {
     title: "Full Stack Developer (MERN)",
-    company_name: "Portfolio Projects",
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbn0htLAxjs_uWGTyEwszKlGWfgwad0VzHCA&s",
-    iconBg: "#E6DEDD",
-    date: "2024",
+    company_name: "Velta – Competitive Learning",
+    icon: "https://cdn-icons-png.flaticon.com/512/2721/2721297.png",
+    iconBg: "#0a0a0a",
+    date: "OCTUBER 2025 - PRESENT",
     points: [
-      "Developed a MERN stack project with user authentication and CRUD functionality.",
-      "Designed and implemented database schemas in MongoDB for structured data storage.",
-      "Created REST APIs using Express.js and integrated them with frontend React applications.",
-      "Ensured responsive and mobile-friendly design using Tailwind CSS.",
-    ],
-  },
-  {
-    title: "Freelance Developer",
-    company_name: "Fiverr / Self Practice",
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdRurK_12ESbJlmq7m5aqSqT-jM821SQ7ow&s",
-    iconBg: "#383E56",
-    date: "2024 - Present",
-    points: [
-      "Designed YouTube thumbnails, edited photos, and built small frontend websites for clients.",
-      "Worked on real-world tasks like landing pages and e-commerce layouts.",
-      "Collaborated with clients to deliver requirements on time with good communication.",
-      "Gained experience in problem-solving and handling projects independently.",
+      "Developed a full-stack MERN platform where users can learn coding, solve problems, and compete with time-based challenges.",
+      "Built secure authentication system with role-based access (Student & Admin dashboards).",
+      "Designed MongoDB schemas and RESTful APIs using Express.js for scalable backend architecture.",
+      "Integrated frontend React application with backend APIs for real-time data interaction.",
     ],
   },
   {
     title: "Software Engineering Student",
     company_name: "University",
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsUSWVE__I8VfKcYDurdouvHON1GLFv_1bKw&s", // education ka icon dal lena
+    icon: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",
     iconBg: "#E6DEDD",
     date: "Ongoing",
     points: [
-      "Studying core concepts like Data Structures, Algorithms, and Object-Oriented Programming.",
-      "Built multiple academic projects to strengthen programming fundamentals.",
-      "Explored modern frameworks including ASP.NET MVC and MERN stack.",
-      "Passionate about learning new technologies and creating impactful digital solutions.",
+      "Studying core concepts including Data Structures, Algorithms, OOP, and Database Systems.",
+      "Built academic projects in Java, ASP.NET MVC, and MERN stack.",
+      "Applied software engineering principles like modularity, version control, and clean architecture.",
+      "Continuously exploring modern web technologies and performance optimization techniques.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -283,6 +261,28 @@ const projects = [
     source_code_link:
       "https://github.com/MuhammadSaadibnMaqsood/Gaming-Website",
   },
+  {
+    name: "URL-Shortner",
+    description:
+      "Bitlink is a trustable URL shortner app which help you to short your URL, build by using Nextjs, tailwind and gsap",
+    tags: [
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "next",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/url.PNG",
+    source_code_link:
+      "https://github.com/MuhammadSaadibnMaqsood/URL-Shortner",
+  },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

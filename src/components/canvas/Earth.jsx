@@ -2,10 +2,20 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "./CanvasLoader";
+
 const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
   return (
-    <primitive rotation-y={0} object={earth.scene} scale={2.2} position-y={0} />
+    <mesh>
+      {/* Adding technical rim lighting to the planet */}
+      <pointLight position={[0, 0, 5]} intensity={0.5} color="#00ffc3" />
+      <primitive
+        object={earth.scene}
+        scale={2.5}
+        position-y={0}
+        rotation-y={0}
+      />
+    </mesh>
   );
 };
 
@@ -14,7 +24,8 @@ const EarthCanvas = () => {
     <Canvas
       shadows
       frameloop="demand"
-      gl={{ preserveDrawingBuffer: true }}
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true, antialias: true }}
       camera={{
         fov: 45,
         near: 0.1,
@@ -23,8 +34,13 @@ const EarthCanvas = () => {
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
+        {/* Technical lighting setup */}
+        <ambientLight intensity={0.3} />
+        <directionalLight position={[5, 5, 5]} intensity={1} />
+
         <OrbitControls
           autoRotate
+          autoRotateSpeed={0.5} // Slowed down for professional look
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
@@ -34,4 +50,5 @@ const EarthCanvas = () => {
     </Canvas>
   );
 };
+
 export default EarthCanvas;

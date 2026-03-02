@@ -13,16 +13,20 @@ const Ball = ({ imgUrl }) => {
   const [decal] = useTexture([imgUrl]);
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
+    <Float speed={2} rotationIntensity={1.5} floatIntensity={2}>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[0, 0, 0.05]} intensity={1} />
+      <pointLight position={[0, 0, 1]} intensity={0.5} color="#00ffc3" />
+      
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="#fff8eb"
+          color="#1a1a1a" 
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
+          metalness={0.8}
+          roughness={0.2}
         />
         <Decal
           position={[0, 0, 1]}
@@ -37,12 +41,16 @@ const Ball = ({ imgUrl }) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas 
+      frameloop="demand" 
+      gl={{ preserveDrawingBuffer: true, antialias: true }}
+      dpr={[1, 2]}
+      camera={{ position: [0, 0, 5], fov: 50 }} // Centered camera, adjusted FOV
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
-      <Preload all />
     </Canvas>
   );
 };
